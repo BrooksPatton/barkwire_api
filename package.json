@@ -1,0 +1,27 @@
+{
+  "name": "barkwire_api",
+  "version": "1.0.0",
+  "description": "An API for the Denver Node.js frontend framework showdown",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrooksPatton/barkwire_api.git"
+  },
+  "author": "Brooks Patton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrooksPatton/barkwire_api/issues"
+  },
+  "homepage": "https://github.com/BrooksPatton/barkwire_api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "supertest": "^4.0.2"
+  }
+}
