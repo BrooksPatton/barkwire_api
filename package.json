@@ -7,7 +7,7 @@
     "test": "mocha",
     "dev": "nodemon bin/www.js",
     "start": "node bin/www.js",
-    "build": "barkwire_api"
+    "build": "node bin/www.js"
   },
   "repository": {
     "type": "git",
