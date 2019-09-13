@@ -1,0 +1,16 @@
+{
+	"version": 2,
+	"builds": [{ "src": "bin/www.js", "use": "@now/node-server" }],
+	"routes": [
+	  {
+		"src": "/dogs",
+		"dest": "/bin/www.js",
+		"methods": ["GET"]
+	  },
+	  {
+		"src": "/dogs/:id",
+		"dest": "/bin/www.js",
+		"methods": ["GET"]
+	  }
+	]
+  }
