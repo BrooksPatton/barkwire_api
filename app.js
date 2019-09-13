@@ -66,7 +66,16 @@ const dogs = [
 const app = express();
 
 app.get('/dogs', (request, response) => response.json(dogs));
+app.get('/dogs/:id', (request, response) => {
+	const {id} = request.params;
+	const dog = dogs[id];
 
-app.listen(process.env.PORT || 3000, () => console.log('app running'));
+	if(dog) {
+		return response.json(dogs[id]);
+	} else {
+		return response.sendStatus(404);
+	}
+
+});
 
 module.exports = app;
