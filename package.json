@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha",
     "dev": "nodemon bin/www.js",
-    "start": "node bin/www.js"
+    "start": "node bin/www.js",
+    "build": "barkwire_api"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,5 @@
     "mocha": "^6.2.0",
     "nodemon": "^1.19.2",
     "supertest": "^4.0.2"
-  },
-  "build": "barkwire_api"
+  }
 }
