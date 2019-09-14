@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 
 const dogs = [
 	{
@@ -64,6 +65,8 @@ const dogs = [
 ];
 
 const app = express();
+
+app.use(cors());
 
 app.get('/dogs', (request, response) => response.json(dogs));
 app.get('/dogs/:id', (request, response) => {
