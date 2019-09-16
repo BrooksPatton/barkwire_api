@@ -18,7 +18,7 @@ describe('dogs api', () => {
 				assert.equal(result.body.length, 10);
 				assert.deepEqual(result.body[0], {
 					id: 0,
-					url: 's3://barkwire-images/Image-from-iOS.jpg',
+					url: 'https://barkwire-images.s3-us-west-1.amazonaws.com/Image-from-iOS.jpg',
 					description: 'Iago is kinda looking for love...not from you though',
 					name: 'Iago'
 				});
